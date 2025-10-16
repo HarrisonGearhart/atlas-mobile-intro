@@ -57,67 +57,74 @@ export default function HomeScreen() {
 
 // --- Styles ---
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 22,
-    backgroundColor: "#FEFAE8",
-  },
-  button: {
-    backgroundColor: "#1AC3A5",
-    paddingVertical: 13,
-    paddingHorizontal: 26,
-    borderRadius: 6,
-    marginBottom: 4,
-  },
-  deleteAllButton: {
-    backgroundColor: "#C00315",
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 18,
-    textAlign: "center",
-    fontWeight: "500",
-  },
-  listContainer: {
-    flex: 1,
-  },
-  activityItem: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 14,
-    backgroundColor: "#fdfdfd",
-    borderRadius: 4,
-    borderWidth: 1.8,
-    borderColor: "#111",
-    marginBottom: 12,
-  },
-  activityInfo: {
-    flex: 1,
-  },
-  stepsText: {
-    fontSize: 19,
-    fontWeight: "600",
-    marginBottom: 6,
-  },
-  dateText: {
-    fontSize: 13,
-    color: "#555",
-  },
-  deleteButton: {
-    backgroundColor: "#dd3a48",
-    paddingVertical: 11,
-    paddingHorizontal: 6,
-    borderRadius: 3,
-  },
-  deleteButtonText: {
-    color: "#fff",
-    fontSize: 15,
-  },
-  emptyText: {
-    textAlign: "center",
-    fontSize: 17,
-    color: "#555",
-    marginTop: 22,
-  },
-});
+    container: {
+      flex: 1,
+      padding: 20,
+      backgroundColor: "#FEF9E6",
+  
+    },
+    title: {
+      fontSize: 28,
+      fontWeight: "bold",
+      marginBottom: 20,
+      marginTop: 40,
+      textAlign: "center",
+    },
+    button: {
+      backgroundColor: "#1ED2AF",
+      paddingVertical: 12,
+      paddingHorizontal: 24,
+      borderRadius: 0,
+      marginBottom: 0,
+    },
+    deleteAllButton: {
+      backgroundColor: "#D00414",
+    },
+    buttonText: {
+      color: "#fff",
+      fontSize: 18,
+      textAlign: "center",
+    },
+    listContainer: {
+      flex: 1,
+    },
+    activityItem: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: 15,
+      backgroundColor: "#ffffff",
+      borderRadius: 0,
+      borderWidth: 2,
+      borderColor: "#000",
+      marginBottom: 10,
+    },
+    activityInfo: {
+      flex: 1,
+    },
+    stepsText: {
+      fontSize: 20,
+      fontWeight: "600",
+      marginBottom: 5,
+    },
+    dateText: {
+      fontSize: 12,
+      color: "#666",
+    },
+    deleteButton: {
+      backgroundColor: "#dc3545",
+      paddingVertical: 10,
+      paddingHorizontal: 4,
+      borderRadius: 0,
+    },
+    deleteButtonText: {
+      color: "#fff",
+      fontSize: 14,
+    },
+    emptyText: {
+      textAlign: "center",
+      fontSize: 16,
+      color: "#666",
+      marginTop: 20,
+    },
+  });

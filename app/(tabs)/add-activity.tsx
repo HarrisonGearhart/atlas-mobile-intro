@@ -53,52 +53,52 @@ export default function AddActivityScreen() {
 
 // --- Styles ---
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: "#fefefe",
-  },
-  title: {
-    fontSize: 30,
-    fontWeight: "600",
-    marginBottom: 28,
-    marginTop: 36,
-    textAlign: "center",
-    color: "#202020",
-  },
-  formContainer: {
-    flex: 1,
-  },
-  label: {
-    fontSize: 17,
-    marginBottom: 12,
-    fontWeight: "500",
-  },
-  input: {
-    borderWidth: 1.5,
-    borderColor: "#bfbfbf",
-    borderRadius: 10,
-    padding: 14,
-    fontSize: 16,
-    marginBottom: 18,
-  },
-  addButton: {
-    backgroundColor: "#2dbb65",
-    paddingVertical: 13,
-    paddingHorizontal: 26,
-    borderRadius: 10,
-    marginBottom: 12,
-  },
-  cancelButton: {
-    backgroundColor: "#5c6368",
-    paddingVertical: 13,
-    paddingHorizontal: 26,
-    borderRadius: 10,
-  },
-  buttonText: {
-    color: "#ffffff",
-    fontSize: 18,
-    textAlign: "center",
-    fontWeight: "600",
-  },
-});
+    container: {
+      flex: 1,
+      padding: 20,
+      backgroundColor: "#fff",
+    },
+    title: {
+      fontSize: 28,
+      fontWeight: "bold",
+      marginTop: 40,
+      marginBottom: 30,
+      textAlign: "center",
+    },
+    formContainer: {
+      flex: 1,
+    },
+    label: {
+      fontSize: 18,
+      fontWeight: "500",
+      marginBottom: 10,
+    },
+    input: {
+      borderWidth: 1,
+      borderColor: "#ccc",
+      borderRadius: 8,
+      padding: 12,
+      fontSize: 16,
+      marginBottom: 20,
+    },
+    addButton: {
+      backgroundColor: "#28a745",
+      paddingVertical: 12,
+      paddingHorizontal: 24,
+      borderRadius: 8,
+      marginBottom: 10,
+    },
+    cancelButton: {
+      backgroundColor: "#6c757d",
+      paddingVertical: 12,
+      paddingHorizontal: 24,
+      borderRadius: 8,
+    },
+    buttonText: {
+      color: "#fff",
+      fontSize: 18,
+      fontWeight: "600",
+      textAlign: "center",
+    },
+  });
+  
