@@ -40,7 +40,8 @@ import {
             style={styles.input}
             value={steps}
             onChangeText={setSteps}
-            placeholder="Enter number of steps"
+            placeholder="Enter Steps"
+            placeholderTextColor="#666666"
             keyboardType="numeric"
           />
   
