@@ -25,7 +25,7 @@ export default function HomeScreen() {
     return date.toLocaleDateString() + " " + date.toLocaleTimeString();
   };
 
-  // Render swipeable delete button for each item
+  // Render swipeable delete button for right swipe
   const renderRightActions = (item: Activity) => (
     <View style={styles.swipeActionContainer}>
       <Pressable style={styles.swipeDeleteButton} onPress={() => deleteActivity(item.id)}>
@@ -34,9 +34,23 @@ export default function HomeScreen() {
     </View>
   );
 
+  // Render swipeable delete button for left swipe
+  const renderLeftActions = (item: Activity) => (
+    <View style={styles.swipeActionContainerLeft}>
+      <Pressable style={styles.swipeDeleteButtonLeft} onPress={() => deleteActivity(item.id)}>
+        <Text style={styles.swipeDeleteText}>Delete</Text>
+      </Pressable>
+    </View>
+  );
+
   // Render individual activity item
   const renderItem = ({ item }: { item: Activity }) => (
-    <Swipeable renderRightActions={() => renderRightActions(item)} overshootRight={false}>
+    <Swipeable
+      renderRightActions={() => renderRightActions(item)}
+      renderLeftActions={() => renderLeftActions(item)}
+      overshootRight={false}
+      overshootLeft={false}
+    >
       <View style={styles.activityItem}>
         <View style={styles.activityInfo}>
           <Text style={styles.dateText}>{formatDate(item.date)}</Text>
@@ -148,6 +162,21 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#000",
     borderLeftWidth: 0,
+  },
+  swipeActionContainerLeft: {
+    justifyContent: "center",
+    marginBottom: 10,
+    alignItems: "flex-end",
+  },
+  swipeDeleteButtonLeft: {
+    backgroundColor: "#D00414",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 100,
+    height: "100%",
+    borderWidth: 2,
+    borderColor: "#000",
+    borderRightWidth: 0,
   },
   swipeDeleteText: {
     color: "#fff",
